@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Feuilles De L'estaque</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="librairie.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -18,9 +18,9 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="livres.html">Livres</a></li>
                 <li><a href="nouveautes.html">Nouveautés</a></li>
-                <li ><a href="notre-librairie.html">Notre librairie</a></li>
+                <li class="active"><a href="notre-librairie.html">Notre librairie</a></li>
                 <li><a href="offres.html">Offres</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="profile-section">
@@ -30,30 +30,39 @@
     </header>
     
     <div class="container">
-        <h1>Nous Contacter</h1>
-        <div class="contact-section">
-          <div class="contact-details">
-            <img src="img/localisation.png" alt="Adresse">
-            <p>21 Rue Marc Donadille,</p>
-            <p>13013 Marseille</p>
+        <aside>
+          <h2>A propos</h2>
+          <p>Bienvenue aux Feuilles de l'Estaque, votre nouvelle librairie moderne au cœur de l'Estaque, à Marseille. Nous croyons en la puissance de la lecture comme un outil inspirant au quotidien. Entre nos murs, retrouvez une sélection soignée d'ouvrages, des événements littéraires et des conseils avisés pour éveiller toutes les curiosités.</p>
+          <p>Que vous soyez passionné de livres ou simplement curieux, venez partager avec nous ce goût de l'évasion et du savoir. Aux Feuilles de l'Étique, la lecture devient une véritable expérience à partager.</p>
+          <img src="img/image 1.png" alt="Intérieur de la librairie">
+        </aside>
+    
+        <aside>
+          <h2>Horaires</h2>
+          <img src="img/image 2.png" alt="Horaires">
+          <ul>
+            <li>Lundi : 8h00 - 19h00</li>
+            <li>Mardi : 8h00 - 19h00</li>
+            <li>Mercredi : Fermé</li>
+            <li>Jeudi : 8h00 - 20h00</li>
+            <li>Vendredi : 8h00 - 20h00</li>
+            <li>Samedi : 8h00 - 20h00</li>
+            <li>Dimanche : Fermé</li>
+          </ul>
+        </aside>
+    
+        <aside>
+          <h2>Espace Café</h2>
+          <p>Carte du Café :</p>
+          <ul>
+            <li>Café & Espresso : Espresso, café allongé, macchiato</li>
+            <li>Spécialités gourmandes : Cappuccino, latte, chocolat chaud, thés variés</li>
+            <li>Douceurs : Croissants, biscuits artisanaux, financiers</li>
+          </ul>
+          <div class="flex-container">
+            <img src="img/image 3.png" alt="Café">
           </div>
-          <div class="contact-details">
-            <img src="img/telephone.png" alt="Téléphone">
-            <p>06.06.06.06.06</p>
-            <p>lesfeuillesdelestaque@gmail.com</p>
-          </div>
-          <div class="contact-form">
-            <form action="#" method="post">
-              <label for="name">Nom, Prénom</label>
-              <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
-              
-              <label for="object">Objet</label>
-              <textarea id="object" name="object" rows="4" placeholder="Votre message" required></textarea>
-              
-              <button type="submit">Envoyer</button>
-            </form>
-          </div>
-        </div>
+        </aside>
       </div>
 
     <footer class="site-footer">
