@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-    width: 120px;
+    width: 80px;
     height: auto;
 }
 
@@ -47,7 +47,7 @@ header {
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     transition: color 0.3s;
 }
 
@@ -78,7 +78,7 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 80px;
   }
 
   h1 {
@@ -86,7 +86,7 @@ header {
     background-color: black;
     color: #fdfdfd;
     margin: 0;
-    padding: 15px 0;
+    padding: 20px 0;
     font-size: 28px;
   }
 
@@ -95,7 +95,7 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     background-color: #9e2323;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
   }
 
@@ -122,8 +122,12 @@ header {
   .contact-form {
     flex: 2;
     background-color: #e8c1a0;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
+  }
+
+  #tel{
+   height: 100px;
   }
 
   .contact-form label {

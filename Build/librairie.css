@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-    width: 120px;
+    width: 80px;
     height: auto;
 }
 
@@ -47,7 +47,7 @@ header {
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     transition: color 0.3s;
 }
 
@@ -74,6 +74,7 @@ header {
     height: auto;
     border-radius: 50%;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
