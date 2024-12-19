@@ -1,0 +1,371 @@
+/* Couleurs principales */
+:root {
+    --bordeaux: #800020;
+    --beige: #EDDEC1;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bordeaux);
+    color: var(--bordeaux);
+    zoom: 0.75;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: var(--beige);
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-section p {
+    font-size: 1.3rem;
+    color: var(--beige);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 999;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--beige);
+    border-radius: 2px;
+}
+
+/* Navigation */
+.navbar ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li.active a,
+.navbar ul li a:hover {
+    color: rgb(224, 156, 9);
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.profile-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.profile-btn img {
+    background: var(--beige);
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.promo-section {
+    margin-bottom: 30px;
+}
+
+.promo-banner {
+    text-align: center;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 10px;
+    background: url('bookshelf.jpg') no-repeat center/cover;
+}
+
+.promo-banner img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.promo-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 600px; 
+    z-index: 1; 
+}
+
+.connexion-section {
+    background-color: #f4e6d8; /* Couleur beige */
+    color: #4c0000; /* Texte bordeaux */
+    border-radius: 10px;
+    padding: 60px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.connexion-section h2 {
+    margin-bottom: 40px;
+}
+
+.connexion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4c0000;
+}
+
+.form-links {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.form-links a {
+    color: #800000;
+    text-decoration: none;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+.popup {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: all 0.8s ease-in-out; 
+}
+
+.popup.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+
+.site-footer {
+    background-color: #d2b5a5; 
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #000; 
+    border-radius: 0 0 20px 20px; 
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.footer-left {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    background-color: #000;
+    max-width: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+}
+
+.footer-tagline {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+
+.footer-info {
+    text-align: right;
+    flex: 1;
+    min-width: 200px;
+    font-size: 0.9rem;
+    color: #000;
+    line-height: 1.5;
+}
+
+
+.footer-line {
+    margin: 1rem 0;
+    border: none;
+    height: 1px;
+    background-color: #000; 
+}
+
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #800000; 
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        display: none;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .books-carousel {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .flip-card {
+        aspect-ratio: 3 / 4;
+    }
+
+    .flip-card .title {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .books-carousel {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0.3rem;
+    }
+
+    .flip-card {
+        aspect-ratio: 3 / 4;
+    }
+
+    .flip-card .title {
+        font-size: 0.9rem;
+    }
+
+    .show-more-btn {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header a {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
