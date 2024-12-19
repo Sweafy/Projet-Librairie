@@ -9,6 +9,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bordeaux);
+    color: white;
+    zoom: 0.75;
 }
 
 header {
@@ -18,6 +20,7 @@ header {
     background: black;
     color: var(--beige);
     padding: 1rem 2rem;
+    position: relative;
 }
 
 .logo-section {
@@ -27,8 +30,9 @@ header {
     gap: 0.5rem;
 }
 
-.logo-section p{
+.logo-section p {
     font-size: 1.3rem;
+    color: var(--beige);
 }
 
 .logo {
@@ -36,6 +40,26 @@ header {
     height: auto;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 999;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--beige);
+    border-radius: 2px;
+}
+
+/* Navigation */
 .navbar ul {
     display: flex;
     gap: 4rem;
@@ -73,6 +97,10 @@ header {
     width: 70px;
     height: auto;
     border-radius: 50%;
+}
+
+.small img{
+    height: 480px;
 }
 
 .container {

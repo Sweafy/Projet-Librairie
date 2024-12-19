@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Feuilles De L'estaque</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Les Feuilles De L'Estaque</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,6 +13,11 @@
             <img src="img/logo.png" alt="Logo" class="logo">
             <p>Les feuilles de l'Estaque</p>
         </div>
+        <button class="hamburger" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="navbar">
             <ul>
                 <li class="active"><a href="index.html">Accueil</a></li>
@@ -29,6 +34,7 @@
                     <img src="img/profil.png" alt="Profil">
                 </button>
             </a>
+        </div>
     </header>
 
     <div class="banner">
@@ -40,6 +46,7 @@
     </div>
 
     <main>
+        <!-- Section Nos plus grands classiques -->
         <section class="categories">
             <h2>Nos plus grands classiques</h2>
             <div class="categories-list">
@@ -49,7 +56,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/Moby_Dick.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/Moby_Dick.jpg" alt="Moby Dick" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Moby Dick</p>
@@ -57,10 +64,10 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="www.google.com" class="flip-card">
+                        <a href="https://www.google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/CrimeEtChatiment.jpeg" alt="Image Front" class="card-image">
+                                    <img src="img/CrimeEtChatiment.jpeg" alt="Crime et Châtiment" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Crime et Châtiment</p>
@@ -71,7 +78,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/LesTroismousquetaires.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/LesTroismousquetaires.jpg" alt="Les Trois Mousquetaires" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Les Trois Mousquetaires</p>
@@ -82,7 +89,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/LePetitPrince.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/LePetitPrince.jpg" alt="Le Petit Prince" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Le Petit Prince</p>
@@ -93,7 +100,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/LesMiserables.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/LesMiserables.jpg" alt="Les Misérables, tome 1" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Les Misérables, tome 1</p>
@@ -101,40 +108,34 @@
                                 </div>
                             </div>
                         </a>
-                        
-                        
                     </div>
-                </div>      
-                    
                 </div>
-                
             </div>
         </section>
-    </main>
 
-    <div class="container">
-        <div class="header">
-          <h1>Rencontre et atelier</h1>
-          <a href="nouveautes.html">Afficher plus →</a>
+        <!-- Section Rencontre et atelier -->
+        <div class="container">
+            <div class="header">
+                <h1>Rencontre et atelier</h1>
+                <a href="nouveautes.html">Afficher plus →</a>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/melissa-da-costa.png" alt="Melissa Da Costa">
+                    <h2>Rencontre<br>Melissa Da Costa</h2>
+                    <p>Venez rencontrer Melissa Da Costa, l'auteure à succès de <em>Tout le bleu du ciel</em> et <em>Les lendemains</em>, pour un moment d'échange riche et captivant. Une occasion unique de découvrir les coulisses de ses récits empreints d'émotions humaines.</p>
+                    <a href="nouveautes.html">En savoir plus</a>
+                </div>
+                <div class="card">
+                    <img src="img/modiano-patrick.png" alt="Patrick Modiano">
+                    <h2>Atelier d'écriture<br>Patrick Modiano</h2>
+                    <p>Participez à un atelier exceptionnel avec Patrick Modiano, Prix Nobel de littérature, pour explorer avec votre plume dans un cadre convivial l'art de l'écriture avec l'un des plus grands écrivains contemporains.</p>
+                    <a href="nouveautes.html">En savoir plus</a>
+                </div>
+            </div>
         </div>
-        <div class="cards">
-          <div class="card">
-            <img src="img/melissa-da-costa.png" alt="Melissa Da Costa">
-            <h2>Rencontre<br>Melissa Da Costa</h2>
-            <p>Venez rencontrer Melissa Da Costa, l'auteure à succès de *Tout le bleu du ciel* et *Les lendemains*, pour un moment d'échange riche et captivant. Une occasion unique de découvrir les coulisses de ses récits empreints d'émotions humaines.</p>
-            <a href="nouveautes.html">En savoir plus</a>
-          </div>
-          <div class="card">
-            <img src="img/modiano-patrick.png" alt="Patrick Modiano">
-            <h2>Atelier d'écriture<br>Patrick Modiano</h2>
-            <p>Participez à un atelier exceptionnel avec Patrick Modiano, Prix Nobel de littérature, pour explorer avec votre plume dans un cadre convivial l'art de l'écriture avec l'un des plus grands écrivains contemporains.</p>
-            <a href="nouveautes.html">En savoir plus</a>
-          </div>
-        </div>
-      </div>
 
-
-    <main>
+        <!-- Section Les coups de coeur du moment -->
         <section class="categories">
             <h2>Les coups de coeur du moment</h2>
             <div class="categories-list">
@@ -144,7 +145,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/Moby_Dick.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/Moby_Dick.jpg" alt="Moby Dick" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Moby Dick</p>
@@ -152,10 +153,10 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="www.google.com" class="flip-card">
+                        <a href="https://www.google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/CrimeEtChatiment.jpeg" alt="Image Front" class="card-image">
+                                    <img src="img/CrimeEtChatiment.jpeg" alt="Crime et Châtiment" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Crime et Châtiment</p>
@@ -166,7 +167,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/LesTroismousquetaires.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/LesTroismousquetaires.jpg" alt="Les Trois Mousquetaires" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Les Trois Mousquetaires</p>
@@ -177,7 +178,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/LePetitPrince.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/LePetitPrince.jpg" alt="Le Petit Prince" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Le Petit Prince</p>
@@ -188,7 +189,7 @@
                         <a href="https://google.com" class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img/LesMiserables.jpg" alt="Image Front" class="card-image">
+                                    <img src="img/LesMiserables.jpg" alt="Les Misérables, tome 1" class="card-image">
                                 </div>
                                 <div class="flip-card-back">
                                     <p class="title">Les Misérables, tome 1</p>
@@ -196,13 +197,8 @@
                                 </div>
                             </div>
                         </a>
-                        
-                        
                     </div>
-                </div>      
-                    
                 </div>
-                
             </div>
         </section>
     </main>
@@ -219,17 +215,15 @@
                 <p>lesfeuillesdelestaque@gmail.com</p>
             </div>
         </div>
-        <!-- nav -->
         <hr class="footer-line">
         <nav class="footer-nav">
-            <a href="#">Accueil</a>
+            <a href="index.html">Accueil</a>
             <a href="livres.html">Livres</a>
             <a href="#">Evénements</a>
-            <a href="#">Origines</a>
-            <a href="#">Offres</a>
-            <a href="#">Contact</a>
+            <a href="notre-librairie.html">Origines</a>
+            <a href="offres.html">Offres</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </footer>
-    
 </body>
 </html>
